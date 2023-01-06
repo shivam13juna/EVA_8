@@ -32,3 +32,18 @@
 7. Training on GPU
 
 * I used the GPU for training.
+
+8. Logs: Used pytorch lightning, so I've the logs in tensorboard.
+
+https://tensorboard.dev/experiment/9aoGDYKyRCOTnKuA3p732Q/#scalars&_smoothingWeight=0.999
+
+![1673046547262](image/README/1673046547262.png)
+test_acc1 is pretty close to 1, which is the accuracy for the MNIST prediction label.
+
+![1673046576128](image/README/1673046576128.png)
+Likewise it's pretty close to 0.4, which is the accuracy for the sum of the random number and the predicted label.
+
+![1673046593281](image/README/1673046593281.png)
+Finally the loss for both mnist prediction label and prediction of the sum, loss is sum of the cross entropy loss and mean squared error loss.
+
+More details are on the link.
