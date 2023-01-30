@@ -75,7 +75,7 @@ ln_model:
   net:
     _target_: src.models.components.ln_model.ConvNet
     norm_layer: 
-      _target_: torch.nn.LayerNorm
+      _target_: torch.nn.GroupNorm
       _partial_: true
 
   use_l1: False
