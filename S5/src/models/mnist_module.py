@@ -1,4 +1,5 @@
 from typing import Any, List
+import tensorboardX
 
 import torch
 from pytorch_lightning import LightningModule
@@ -54,6 +55,9 @@ class MNISTLitModule(LightningModule):
 
         # for tracking best so far validation accuracy
         self.val_acc_best = MaxMetric()
+        self.val_acc_metrics = []
+        self.val_loss_metrics = []
+
 
     def forward(self, x: torch.Tensor):
         return self.net(x)
@@ -112,7 +116,20 @@ class MNISTLitModule(LightningModule):
         self.val_acc_best(acc)  # update best so far val acc
         # log `val_acc_best` as a value through `.compute()` method, instead of as a metric object
         # otherwise metric would be reset by lightning after each epoch
+
+        self.val_acc_metrics.append(self.val_acc.compute())
+        self.val_loss_metrics.append(self.val_loss.compute())
+
         self.log("val/acc_best", self.val_acc_best.compute(), prog_bar=True)
+        self.log("val/acc", self.val_acc, on_step=False, on_epoch=True, prog_bar=True)
+        self.log("val/loss", self.val_loss, on_step=False, on_epoch=True, prog_bar=True)
+        # self.log("train/acc", self.train_acc, on_step=False, on_epoch=True, prog_bar=True)
+        # self.log("train/loss", self.train_loss, on_step=False, on_epoch=True, prog_bar=True)
+        # val_acc_str = ', '.join(str(round(x.item(), 4)) for x in self.val_acc_metrics)
+        # val_loss_str = ', '.join(str(round(x.item(), 4)) for x in self.val_loss_metrics)
+
+        # self.log("val/acc_every_epoch", torch.tensor(val_acc_str), on_step=False, on_epoch=True, prog_bar=True)
+        # self.log("vacl/loss_every_epoch", val_loss_str, on_step=False, on_epoch=True, prog_bar=True)
 
     def test_step(self, batch: Any, batch_idx: int):
         loss, preds, targets = self.model_step(batch)

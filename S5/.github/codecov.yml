@@ -1,15 +1,20 @@
+codecov:
+  require_ci_to_pass: yes
+
 coverage:
-  status:
-    # measures overall project coverage
-    project:
-      default:
-        threshold: 100% # how much decrease in coverage is needed to not consider success
+  precision: 2
+  round: down
+  range: "70...100"
 
-    # measures PR or single commit coverage
-    patch:
-      default:
-        threshold: 100% # how much decrease in coverage is needed to not consider success
+parsers:
+  gcov:
+    branch_detection:
+      conditional: yes
+      loop: yes
+      method: no
+      macro: no
 
-
-    # project: off
-    # patch: off
+comment:
+  layout: "reach,diff,flags,tree"
+  behavior: default
+  require_changes: no
