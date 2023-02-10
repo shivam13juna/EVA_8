@@ -16,7 +16,7 @@ As required, an additional repo was created with models, utils and main files in
 
 ## GradCam Output
 
-![Grad Cam](image/README/1676013775055.png)
+![Grad Cam](image/README/1676036262178.png)
 ## Training Logs 
 
 EPOCH: 1
