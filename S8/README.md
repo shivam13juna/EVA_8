@@ -7,7 +7,7 @@ As required, an additional repo was created with models, utils and main files in
 
 ## Link to custom ResNet Model
 
-Here's the link to the [Custom ResNet Model](https://github.com/shivam13juna/eva8_utils/blob/master/models/custom_resnet.py)
+Here's the link to the [Custom ResNet Model](https://github.com/shivam13juna/eva8_utils/blob/master/models/s8_custom_resnet.py)
 
 
 I couldn't get 90%, I got 88%
