@@ -5,8 +5,13 @@
 As required, an additional repo was created with models, utils and main files in the following location: [EVA 8 Utils](https://github.com/shivam13juna/eva8_utils.git)
 
 
-## Training Logs
+## Link to custom ResNet Model
 
+Here's the link to the [Custom ResNet Model](https://github.com/shivam13juna/eva8_utils/blob/master/models/custom_resnet.py)
+
+
+I couldn't get 90%, I got 88%
+## Training Logs
 
 EPOCH: 1
 Loss=2.085648775100708 Batch_id=97 LR=0.00576 Accuracy=30.79: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 98/98 [00:21<00:00,  4.54it/s]
