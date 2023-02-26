@@ -103,7 +103,7 @@ train_acc, train_losses, test_acc, test_losses, lrs = main.start_training(
     trainloader,
     testloader,
     config,
-    optimizer_name="SGD",
+    optimizer_name="Adam",
     # scheduler_name="ReduceLROnPlateau",
     scheduler_name="OneCycle",
     criterion_name="CrossEntropyLoss",
