@@ -12,54 +12,7 @@ Here's the link to the [Custom Attention Network](https://github.com/shivam13jun
 
 I couldn't get above 18%
 ## Training Logs
-----------------------------------------------------------------
-        Layer (type)               Output Shape         Param #
-================================================================
-            Conv2d-1           [-1, 16, 32, 32]             432
-       BatchNorm2d-2           [-1, 16, 32, 32]              32
-              ReLU-3           [-1, 16, 32, 32]               0
-            Conv2d-4           [-1, 32, 32, 32]           4,608
-       BatchNorm2d-5           [-1, 32, 32, 32]              64
-              ReLU-6           [-1, 32, 32, 32]               0
-            Conv2d-7           [-1, 48, 32, 32]          13,824
-       BatchNorm2d-8           [-1, 48, 32, 32]              96
-              ReLU-9           [-1, 48, 32, 32]               0
-AdaptiveAvgPool2d-10             [-1, 48, 1, 1]               0
-           Linear-11                    [-1, 8]             384
-           Linear-12                    [-1, 8]             384
-           Linear-13                    [-1, 8]             384
-          Softmax-14                    [-1, 8]               0
-           Linear-15                   [-1, 48]             384
-          ULTIMUS-16                   [-1, 48]               0
-           Linear-17                    [-1, 8]             384
-           Linear-18                    [-1, 8]             384
-           Linear-19                    [-1, 8]             384
-          Softmax-20                    [-1, 8]               0
-           Linear-21                   [-1, 48]             384
-          ULTIMUS-22                   [-1, 48]               0
-           Linear-23                    [-1, 8]             384
-           Linear-24                    [-1, 8]             384
-           Linear-25                    [-1, 8]             384
-          Softmax-26                    [-1, 8]               0
-           Linear-27                   [-1, 48]             384
-          ULTIMUS-28                   [-1, 48]               0
-           Linear-29                    [-1, 8]             384
-           Linear-30                    [-1, 8]             384
-           Linear-31                    [-1, 8]             384
-          Softmax-32                    [-1, 8]               0
-           Linear-33                   [-1, 48]             384
-          ULTIMUS-34                   [-1, 48]               0
-           Linear-35                   [-1, 10]             480
-================================================================
-Total params: 25,680
-Trainable params: 25,680
-Non-trainable params: 0
-----------------------------------------------------------------
-Input size (MB): 0.01
-Forward/backward pass size (MB): 2.25
-Params size (MB): 0.10
-Estimated Total Size (MB): 2.36
-----------------------------------------------------------------
+
 EPOCH: 1
 Loss=1.9261754751205444 Batch_id=97 LR=0.00576 Accuracy=17.18: 100%|█| 98/98 [00
 
