@@ -1,3 +1,6 @@
+*.pt
+*.weight
+*.weights
 data/
 *.gz
 *.ckpt
