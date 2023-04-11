@@ -8,34 +8,34 @@
 <!-- Add 16 images from the folder custom_images, in a 4x4 grid -->
 <h2>Elsa</h2>
 <p float="left">
-  <img src="custom_images/1.png" width="300" />
-  <img src="custom_images/2.png" width="300" />
-  <img src="custom_images/3.png" width="300" />
-  <img src="custom_images/4.png" width="300" />
+  <img src="custom_images/1.png" width="200" />
+  <img src="custom_images/2.png" width="200" />
+  <img src="custom_images/3.png" width="200" />
+  <img src="custom_images/4.png" width="200" />
 </p>
 
 <h2>Anna</h2>
 <p float="left">
-  <img src="custom_images/5.png" width="300" />
-  <img src="custom_images/6.png" width="300" />
-  <img src="custom_images/7.png" width="300" />
-  <img src="custom_images/8.png" width="300" />
+  <img src="custom_images/5.png" width="200" />
+  <img src="custom_images/6.png" width="200" />
+  <img src="custom_images/7.png" width="200" />
+  <img src="custom_images/8.png" width="200" />
 </p>
 
 <h2>Kristoff</h2>
 <p float="left">
-  <img src="custom_images/9.png" width="300" />
-  <img src="custom_images/10.png" width="300" />
-  <img src="custom_images/11.png" width="300" />
-  <img src="custom_images/12.png" width="300" />
+  <img src="custom_images/9.png" width="200" />
+  <img src="custom_images/10.png" width="200" />
+  <img src="custom_images/11.png" width="200" />
+  <img src="custom_images/12.png" width="200" />
 </p>
 
 <h2>Olaf</h2>
 <p float="left">
-  <img src="custom_images/13.png" width="300" />
-  <img src="custom_images/14.png" width="300" />
-  <img src="custom_images/15.png" width="300" />
-  <img src="custom_images/16.png" width="300" />
+  <img src="custom_images/13.png" width="200" />
+  <img src="custom_images/14.png" width="200" />
+  <img src="custom_images/15.png" width="200" />
+  <img src="custom_images/16.png" width="200" />
 </p>
 
 
