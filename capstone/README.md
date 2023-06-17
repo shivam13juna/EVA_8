@@ -9,25 +9,29 @@ Definitely I haven't used entire 4 billion images, I used 10k. The image size is
 Sample Image's canny
 ![1687010839964](image/README/1687010839964.png)
 
-Actual Image 
+Actual Image
 ![1687010880776](image/README/1687010880776.png)
 
 Prompt for the same was "**Sweet fig \u2014 Stock Photo**"
 
-I understand it's not exactly the write description, but it was good enough. 
+I understand it's not exactly the write description, but it was good enough.
 
 ### Run the script
-For converting the script I made custom notebook for iteratively going throuh the images, renaminig them, and creating the source/target image along with the json file. 
+
+For converting the script I made custom notebook for iteratively going throuh the images, renaminig them, and creating the source/target image along with the json file.
 
 ![1687011044620](image/README/1687011044620.png)
 What my image-data.json looks like
+
 ## Training the ControlNet
+
 Most of the code for training was already present in the repo, I just had to match my dataset with the already datset loader created in the repo
 
 I followed the link to train control net [How to train control net](https://github.com/lllyasviel/ControlNet/blob/main/docs/train.md)
 
 #### Training Logs
-I trained model for 5 epochs 
+
+I trained model for 5 epochs
 
 ```
 Epoch 0: 92% 920/1000 [4:08:40<23:06, 17.33s/it, loss=0.15, v_num=16, train/loss_simple_step=0.164, train/loss_vlb_step=0.00294, train/loss_step=0.164, global_step=919.0] Data shape for DDIM sampling is (4, 2, 64, 64), eta 0.0
@@ -49,8 +53,30 @@ Running DDIM Sampling with 70 timesteps
 The checkpoint is after 5 epochs of training on NVidia A100 GPU.
 
 ## Result
+
 Sample screenshot
 
 ![1687012364526](image/README/1687012364526.png)
 
 ![1687012467194](image/README/1687012467194.png)
+
+
+
+
+# In Painting
+
+It's much simpler than control net, the scripts were taken from repo [stable diffusion](https://github.com/runwayml/stable-diffusion)
+
+Downloading relevant checkpoints, and using the script from 
+
+```
+scripts/inpaint.py
+
+python scripts/inpaint.py --ckpt 512-inpainting-ema.ckpt --config configs/stable-diffusion/v2-inpainting-inference.yaml
+``` 
+
+Some sample results
+
+![1687013164318](image/README/1687013164318.png)
+
+original image was the ferrary image showed in the control net section
