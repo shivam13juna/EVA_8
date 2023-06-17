@@ -1,3 +1,7 @@
+*.parquet
+capstone/image/
+capstone/image_dataset/
+capstone/control_net/dataset
 *.pt
 *.weight
 *.weights
